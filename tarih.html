@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<title>Yeni Sayfa 1</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body bgcolor="#000000" onload="FP_preloadImgs(/*url*/'button2.jpg',/*url*/'button3.jpg',/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'buttonB.jpg',/*url*/'buttonC.jpg',/*url*/'buttonE.jpg',/*url*/'buttonF.jpg',/*url*/'button11.jpg',/*url*/'button12.jpg',/*url*/'button14.jpg',/*url*/'button15.jpg',/*url*/'button17.jpg',/*url*/'button18.jpg')">
+
+<table border="1" width="100%">
+	<tr>
+		<td bgcolor="#FFFFFF">
+		<p align="center">
+		<img border="0" id="img1" src="button1.jpg" height="33" width="100" alt="İngilizce" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button2.jpg')" fp-style="fp-btn: Metal Tab 1" fp-title="İngilizce"><img border="0" id="img2" src="button4.jpg" height="33" width="100" alt="Matematik" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button5.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button4.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button5.jpg')" fp-style="fp-btn: Metal Tab 2" fp-title="Matematik"><img border="0" id="img3" src="button7.jpg" height="33" width="100" alt="Fizik" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button8.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button7.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button8.jpg')" fp-style="fp-btn: Metal Tab 3" fp-title="Fizik"><img border="0" id="img4" src="buttonA.jpg" height="33" width="100" alt="Kimya" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonB.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonA.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonC.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonB.jpg')" fp-style="fp-btn: Metal Tab 4" fp-title="Kimya"><img border="0" id="img5" src="buttonD.jpg" height="33" width="100" alt="Biyoloji" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttonE.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttonD.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttonF.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttonE.jpg')" fp-style="fp-btn: Metal Tab 5" fp-title="Biyoloji"><img border="0" id="img6" src="button10.jpg" height="33" width="100" alt="Geometri" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button11.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button10.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button12.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button11.jpg')" fp-style="fp-btn: Metal Tab 6" fp-title="Geometri"><img border="0" id="img7" src="button13.jpg" height="33" width="100" alt="Felsefe" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button14.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button13.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button15.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button14.jpg')" fp-style="fp-btn: Metal Tab 7" fp-title="Felsefe"><img border="0" id="img8" src="button16.jpg" height="33" width="100" alt="Coğrafya" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'button17.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'button16.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'button18.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'button17.jpg')" fp-style="fp-btn: Metal Tab 8" fp-title="Coğrafya"></td>
+	</tr>
+	<tr>
+		<td><div class="gm4html5_div_class" id="gm4html5_div_id">
+            
+            <!-- Builtin injector for splash screen -->
+            
+
+            <!-- Create the canvas element the game draws to -->
+            <canvas id="canvas" width="853" height="480" >
+                <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
+
+        <!-- Run the game code -->
+        <script type="text/javascript" src="html5game/Tarih.js?cachebust=93975002"></script>
+
+        <!-- Builtin injector for injecting runner path -->
+        
+
+        <script>window.onload = GameMaker_Init;</script>
+
+        <!-- Builtin injector for injecting google analytics code -->
+        
+
+</td>
+	</tr>
+	<tr>
+		<td><font color="#FFFFFF">TYT (Temel Yeterlilik Testi) Tarih Dersi 
+		Aşağıdaki Konuları İçermektedir.<br>
+		<br>
+		Tarih ve Zaman<br>
+		İnsanlığın İlk Dönemleri<br>
+		Ortaçağ’da Dünya<br>
+		İlk ve Orta Çağlarda Türk Dünyası<br>
+		İslam Medeniyetinin Doğuşu<br>
+		İlk Türk İslam Devletleri<br>
+		Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiye'si<br>
+		Beylikten Devlete Osmanlı Siyaseti(1300-1453)<br>
+		Dünya Gücü Osmanlı Devleti (1453-1600)<br>
+		Yeni Çağ Avrupa Tarihi<br>
+		Yakın Çağ Avrupa Tarihi<br>
+		Osmanlı Devletinde Arayış Yılları<br>
+		18. Yüzyılda Değişim ve Diplomasi<br>
+		En Uzun Yüzyıl<br>
+		Osmanlı Kültür ve Medeniyeti<br>
+		20. Yüzyılda Osmanlı Devleti<br>
+		Dünya Savaşı<br>
+		Mondros Ateşkesi, İşgaller ve Cemiyetler<br>
+		Kurtuluş Savaşına Hazırlık Dönemi<br>
+		TBMM Dönemi<br>
+		Kurtuluş Savaşı ve Antlaşmalar<br>
+		TBMM Dönemi ve Çok Partili Hayata Geçiş<br>
+		Türk İnkılabı<br>
+		Atatürk İlkeleri<br>
+		Atatürk Dönemi Türk Dış Politikası</font></td>
+	</tr>
+</table>
+
+</body>
+
+</html>
